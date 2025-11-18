@@ -1,7 +1,8 @@
-set up server from this guide:
+Set up server from this guide:
 Guide-to-install-CUDA-12.3-cuDNN-8.9.7-Tensorflow2.20-Jupyter-Notebook-Lab-pytorch 
-one of my repositories
-then:
+One of my repositories. Obviously up to the point where you need to create a virtualenv. :-))) So the sytem is set to be able to have any number of virtualenv you fancy. That is just the OS and it is a good practice to have a dedicated OS for a certain type of projects. In this case it is a data science related OS and using the most compatible versions of the dependencies. I woudln't recommend using virtual machines for deep learning for obvious reasons. I am trying to show how it works through many examples so the errors are recorded and hopefully most are answered in one place. I hope this can save time for everyone instead opening many tabs in order to find the answers. The point would be using the pc and getting familiar with OS requirements to carry out data science tasks successfully. Experimenting the new releases. 
+
+Then:
 
 $ virtualenv XYZ
 $ source XYZ/bin/activate
@@ -16,7 +17,7 @@ tensorflow-text              2.19.0
 
 You can upgrade to tensorflow_2.20 by running:
 $ pip install --upgrade tensorflow[and-cuda]
-for a cost of some dependency incompatibilies:
+for a cost of some dependency incompatibilities:
 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
 tensorflow-metadata 1.17.2 requires protobuf<4.22,>=4.21.6; python_version < "3.11", but you have protobuf 6.33.1 which is incompatible.
 tensorflow-text 2.19.0 requires tensorflow<2.20,>=2.19.0, but you have tensorflow 2.20.0 which is incompatible.
