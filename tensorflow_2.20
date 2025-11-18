@@ -1,0 +1,8 @@
+set up server from this guide:
+Guide-to-install-CUDA-12.3-cuDNN-8.9.7-Tensorflow2.20-Jupyter-Notebook-Lab-pytorch 
+one of my repositories
+then:
+
+$ virtualenv XYZ
+$ source XYZ/bin/activate
+$ pip install tensorflow[and-cuda] keras numpy pandas jupyterlab matplotlib seaborn tensorflow_datasets keras-hub scikit-learn
