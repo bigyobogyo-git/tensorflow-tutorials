@@ -14,6 +14,15 @@ tensorflow-io-gcs-filesystem 0.37.1
 tensorflow-metadata          1.17.2
 tensorflow-text              2.19.0
 
+You can upgrade to tensorflow_2.20 by running:
+$ pip install --upgrade tensorflow[and-cuda]
+for a cost of some dependency incompatibilies:
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow-metadata 1.17.2 requires protobuf<4.22,>=4.21.6; python_version < "3.11", but you have protobuf 6.33.1 which is incompatible.
+tensorflow-text 2.19.0 requires tensorflow<2.20,>=2.19.0, but you have tensorflow 2.20.0 which is incompatible.
+
+Feel free to explore the environemnt and be flexible about it! But this is how it should look like in order to use the gpu for deep learning. It depends on the project which version you should choose.  
+
 $ pip list | grep nvidia
 nvidia-cublas-cu12           12.5.3.2
 nvidia-cuda-cupti-cu12       12.5.82
