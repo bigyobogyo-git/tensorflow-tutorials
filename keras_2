@@ -1,0 +1,6 @@
+create a virtualenv
+$ virtualenv XYZ
+$ source XYZ/bin/activate
+
+$ pip install "tensorflow[and-cuda]<2.16" "keras<3" jupyterlab pandas numpy seaborn scikit-learn matplotlib keras-hub tensorflow-text tensorflow_datasets
+
